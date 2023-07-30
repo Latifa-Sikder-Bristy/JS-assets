@@ -9,5 +9,6 @@ if(isGraduated === true && salary > 5000 && car <= 1){
     console.log("Got job");
 }else{
     console.log("Build Skill");
-
 }
+
+// permutation and combination
