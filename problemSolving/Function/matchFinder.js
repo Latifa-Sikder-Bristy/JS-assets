@@ -7,3 +7,4 @@ function matchFinder(string1, string2) {
 }
 
 console.log(matchFinder('“John Doe”', 'oe'));
+console.log(matchFinder('Peter Parker','pet'));

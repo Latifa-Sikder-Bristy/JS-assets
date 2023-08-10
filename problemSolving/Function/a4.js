@@ -13,3 +13,13 @@ function matchFinder(string1, string2) {
     const indexOf = string1.indexOf(string2);
     return indexOf !== -1;
 }
+
+function sortMaker(arr) {
+    if (arr.length !== 2 || arr[0] < 0 || arr[1] < 0) {
+        return "Invalid Input";
+    } else {
+        arr.sort();
+        [arr[0], arr[1]] = [arr[1], arr[0]]
+        return arr;
+    }
+}
