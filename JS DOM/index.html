@@ -10,6 +10,14 @@
         li {
             color: brown;
         }
+
+        #fruits-title {
+            color: teal;
+        }
+
+        .importent-list-item {
+            color: cadetblue;
+        }
     </style>
 </head>
 
@@ -17,16 +25,42 @@
     <header>
         <h1>Welcome to my DOM head</h1>
     </header>
-    <main>
-        <h1>My awesome DOM main part</h1>
-        <ul>
-            <li>Jalali set</li>
-            <li>Shafayet</li>
-            <li>Bonobas</li>
-            <li>Dom de baba dom dee</li>
-        </ul>
+    <main id="main-contenter">
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore harum nihil neque unde at ex esse earum
+                ad soluta id voluptatem consequuntur perspiciatis minus architecto magni iusto quibusdam voluptatibus
+                nulla vero, quod ducimus?
+            </p>
+            <h1>My awesome DOM main part</h1>
+            <ul>
+                <li>Jalali set</li>
+                <li class="importent-list-item">Shafayet</li>
+                <li>Bonobas</li>
+                <li>Dom de baba dom dee</li>
+            </ul>
+        </section>
+
+        <section class="fruits-container">
+            <h1 id="fruits-title">Fruits</h1>
+            <ul>
+                <li class="importent-list-item">Apple</li>
+                <li>Bnana</li>
+                <li>Carrot</li>
+            </ul>
+        </section>
+        <section id="places-container" class="large-text">
+            <h1 id="places-title">Places I like to visit</h1>
+            <ul id="places-list">
+                <li>Sundarban</li>
+                <li class="importent-list-item">Bandarban</li>
+                <li>Katabon</li>
+                <li>Shalbon</li>
+            </ul>
+        </section>
     </main>
     <script src="js/dom.js"></script>
+    <script src="js/append.js"></script>
+    <script src="js/styleinjs.js"></script>
     <script>
         /* console.log("Adding JS inside html file");
 
@@ -41,13 +75,31 @@
         const liCollection = document.getElementsByTagName('li')
         // console.log(liCollection);
         for (const li of liCollection) {
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
 
         const allHeadings = document.getElementsByTagName('h1')
         for (const h1 of allHeadings) {
-            console.log(h1.innerText);
+            // console.log(h1.innerText);
         }
+
+        const importantList = document.getElementsByClassName('importent-list-item');
+        // console.log(importantList);
+
+        for (const list of importantList) {
+            // console.log(list.innerText);
+        }
+
+        const fruitsTitle = document.getElementById('fruits-title');
+        fruitsTitle.innerText = "Change fruits-title by JS";
+
+        //queryselectorAll 
+        const someLi = document.querySelectorAll('.fruits-container li');
+        // console.log(someLi);
+        for (const li of someLi) {
+            // console.log(li.innerText);
+        }
+
     </script>
 </body>
 
