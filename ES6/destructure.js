@@ -40,6 +40,6 @@ const [x, y] = [458, 199];
 function doubleThem (a, b){
     return [a*2 , b*2]
 }
-
+// left size e distructured by array
 const [prothom, ditio] = doubleThem(6, 9);
 console.log(prothom, ditio)

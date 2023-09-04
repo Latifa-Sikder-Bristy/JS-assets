@@ -27,7 +27,12 @@ function sortMaker(arr) {
     }
 }
 
-
+function findAddress(obj) {
+    const street    = obj.street ? obj.street : '__';
+    const house       = obj.house ? obj.house : '__';
+    const society   = obj.society ? obj.society : '__';
+    return street +','+ house +','+ society ;
+}
 
 
 

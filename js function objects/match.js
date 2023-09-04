@@ -50,3 +50,6 @@ function matchProducts (products, search){
 const result = matchProducts(products, 'phone');
 console.log(result);
 //by default return undefined
+
+// ---------Tips------------
+/** to lowercase both **/
